@@ -66,33 +66,31 @@ class _Profil_mentorState extends State<Profil> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Nama",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.blue)), // Ubah posisi teks ke tengah
+                Text("Bastian",
                     textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                Text("halo",
-                    textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                SizedBox(height: 10),
-                Text("Umur",
-                    textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Masukkan umur',
-                  ),
-                ),
-                SizedBox(height: 10),
+                Divider(color: Colors.black), // Divider
                 Text("Alamat",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.blue)), // Ubah posisi teks ke tengah
+                Text("Begawan Malang",
                     textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Masukkan alamat',
-                  ),
-                ),
-                SizedBox(height: 10),
+                Divider(color: Colors.black), // Divider
                 Text("Email",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.blue)), // Ubah posisi teks ke tengah
+                Text("bastian223@gmail.com",
                     textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                TextField(
-                  decoration: InputDecoration(
-                    hintText: 'Masukkan email',
-                  ),
-                ),
+                Divider(color: Colors.black), // Divider
+                Text("Nomor",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.blue)),
+                Text("0821-3487-99456", textAlign: TextAlign.center),
+                Divider(color: Colors.black),
               ],
             ),
           ),
