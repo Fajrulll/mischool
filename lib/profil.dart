@@ -13,15 +13,22 @@ class _Profil_mentorState extends State<Profil> {
     return Scaffold(
       body: ListView(
         children: [
+          SizedBox(
+            height: 38,
+          ),
           // Title and Back Arrow
           Container(
             child: Stack(
               children: [
-                GestureDetector(
-                  child: Icon(
-                    Icons.arrow_back,
-                    size: 32,
-                    color: Color(0xFF32344D),
+                Padding(
+                  padding: const EdgeInsets.only(
+                      left: 24), // Tambahkan Padding ke sini
+                  child: GestureDetector(
+                    child: Icon(
+                      Icons.arrow_back,
+                      size: 32,
+                      color: Colors.blue,
+                    ),
                   ),
                 ),
                 Center(
@@ -43,7 +50,7 @@ class _Profil_mentorState extends State<Profil> {
           // Avatar
           Center(
             child: Container(
-              margin: EdgeInsets.only(bottom: 20),
+              margin: EdgeInsets.only(bottom: 10),
               width: 130,
               height: 130,
               decoration: BoxDecoration(
@@ -61,34 +68,52 @@ class _Profil_mentorState extends State<Profil> {
           ),
           // Text Fields
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 48),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text("Nama",
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.blue)), // Ubah posisi teks ke tengah
+                    style: TextStyle(color: Colors.blue)),
+                SizedBox(
+                  height: 5,
+                ), // Ubah posisi teks ke tengah
                 Text("Bastian",
                     textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                Divider(color: Colors.black), // Divider
+                Divider(color: Colors.black),
+                SizedBox(
+                  height: 10,
+                ), // Divider
                 Text("Alamat",
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.blue)), // Ubah posisi teks ke tengah
+                    style: TextStyle(color: Colors.blue)),
+                SizedBox(
+                  height: 5,
+                ), // Ubah posisi teks ke tengah
                 Text("Begawan Malang",
                     textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                Divider(color: Colors.black), // Divider
+                Divider(color: Colors.black),
+                SizedBox(
+                  height: 10,
+                ), // Divider
                 Text("Email",
                     textAlign: TextAlign.center,
-                    style: TextStyle(
-                        color: Colors.blue)), // Ubah posisi teks ke tengah
+                    style: TextStyle(color: Colors.blue)),
+                SizedBox(
+                  height: 5,
+                ), // Ubah posisi teks ke tengah
                 Text("bastian223@gmail.com",
                     textAlign: TextAlign.center), // Ubah posisi teks ke tengah
-                Divider(color: Colors.black), // Divider
+                Divider(color: Colors.black),
+                SizedBox(
+                  height: 10,
+                ), // Divider
                 Text("Nomor",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.blue)),
+                SizedBox(
+                  height: 5,
+                ),
                 Text("0821-3487-99456", textAlign: TextAlign.center),
                 Divider(color: Colors.black),
               ],
