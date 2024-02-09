@@ -1,28 +1,105 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:mischool/profil.dart';
 
 void main() {
   runApp(MyApp());
 }
- class MyApp extends StatelessWidget {
-  
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final items=<Widget>[
-    Icon(Icons.settings, size: 20,),
-    Icon(Icons.edit_document, size: 20 ),
-  ];
-    return Scaffold(
-      backgroundColor: Colors.blue,
-      appBar: AppBar(
-        title: Text(" navar navigation"),
-        elevation: 0,
-        centerTitle: true,
-      ),
-      bottomNavigationBar: CurvedNavigationBar(
-        items: items
-      ),
+    return MaterialApp(
+      home: MyHomePage(),
     );
   }
 }
 
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  int _selectedIndex = 0;
+
+  final List<Widget> _widgetOptions = <Widget>[
+    Container(
+      color: Color.fromARGB(255, 255, 255, 255),
+      child: Center(
+        child: Text(
+          'Settings',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
+      ),
+    ),
+    Container(
+      color: Colors.white,
+      child: Center(
+        child: Text(
+          'Edit Document',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
+      ),
+    ),
+    Container(
+      color: Colors.white,
+      child: Center(
+        child: Text(
+          'Home',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+        ),
+      ),
+    ),
+    Profil(), // Here you add the profile page directly
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      extendBody: true,
+      backgroundColor: Colors.orange,
+      body: Center(
+        child: _widgetOptions.elementAt(_selectedIndex),
+      ),
+      bottomNavigationBar: CurvedNavigationBar(
+        height: 55, // Set the height here
+        buttonBackgroundColor: Colors.transparent,
+        // Change button background color to transparent
+        color: Colors.blue,
+        backgroundColor: Colors.transparent,
+        items: <Widget>[
+          Image.asset(
+            'assets/images/Setting.png',
+            height: 26,
+            width: 26,
+            color: _selectedIndex == 0 ? Colors.black : Colors.white,
+          ),
+          Image.asset(
+            'assets/images/Document.png',
+            height: 26,
+            width: 26,
+            color: _selectedIndex == 1 ? Colors.black : Colors.white,
+          ),
+          Image.asset(
+            'assets/images/Home.png',
+            height: 26,
+            width: 26,
+            color: _selectedIndex == 2 ? Colors.black : Colors.white,
+          ),
+          Image.asset(
+            'assets/images/Profile.png',
+            height: 26,
+            width: 26,
+            color: _selectedIndex == 3 ? Colors.black : Colors.white,
+          ),
+        ],
+        onTap: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
+      ),
+    );
+  }
+}
