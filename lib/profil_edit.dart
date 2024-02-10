@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mischool/main.dart';
+import 'package:mischool/profil.dart';
 import 'profil_edit.dart'; // Sesuaikan dengan nama file dan lokasi yang benar
 
 class Profiledit extends StatefulWidget {
@@ -35,19 +37,39 @@ class _Profiledit_State extends State<Profiledit> {
           ),
           // Avatar
           Center(
-            child: Container(
-              margin: EdgeInsets.only(bottom: 10),
-              width: 130,
-              height: 130,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: AssetImage('assets/images/profil.png'),
-                  fit: BoxFit.cover,
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(bottom: 10),
+                  width: 130,
+                  height: 130,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/profil.png'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
-              ),
+                Positioned(
+                  bottom: 10,
+                  right: 10,
+                  child: Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      color: Colors.blue,
+                    ),
+                    child: Icon(
+                      Icons.edit,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
+
           SizedBox(
             height: 30,
           ),
@@ -195,7 +217,12 @@ class _Profiledit_State extends State<Profiledit> {
                     // Tombol Kembali
                     InkWell(
                       onTap: () {
-                        // Tambahkan fungsi untuk tombol kembali di sini
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => MyApp(),
+                          ),
+                        ); // Tambahkan fungsi untuk tombol kembali di sini
                       },
                       child: Container(
                         height: 44,

@@ -25,6 +25,9 @@ class _Profil_mentorState extends State<Profil> {
                   padding: const EdgeInsets.only(
                       left: 24), // Tambahkan Padding ke sini
                   child: GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
                     child: Icon(
                       Icons.arrow_back,
                       size: 32,
@@ -73,81 +76,105 @@ class _Profil_mentorState extends State<Profil> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Nama",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.blue)),
+                Text(
+                  "Nama",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.blue),
+                ),
                 SizedBox(
                   height: 5,
                 ), // Ubah posisi teks ke tengah
-                Text("Bastian",
-                    textAlign: TextAlign.center), // Ubah posisi teks ke tengah
+                Text(
+                  "Bastian",
+                  textAlign: TextAlign.center,
+                ), // Ubah posisi teks ke tengah
                 Divider(color: Colors.black),
                 SizedBox(
                   height: 10,
                 ), // Divider
-                Text("Alamat",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.blue)),
+                Text(
+                  "Alamat",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.blue),
+                ),
                 SizedBox(
                   height: 5,
                 ), // Ubah posisi teks ke tengah
-                Text("Begawan Malang",
-                    textAlign: TextAlign.center), // Ubah posisi teks ke tengah
+                Text(
+                  "Begawan Malang",
+                  textAlign: TextAlign.center,
+                ), // Ubah posisi teks ke tengah
                 Divider(color: Colors.black),
                 SizedBox(
                   height: 10,
                 ), // Divider
-                Text("Email",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.blue)),
+                Text(
+                  "Email",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.blue),
+                ),
                 SizedBox(
                   height: 5,
                 ), // Ubah posisi teks ke tengah
-                Text("bastian223@gmail.com",
-                    textAlign: TextAlign.center), // Ubah posisi teks ke tengah
+                Text(
+                  "bastian223@gmail.com",
+                  textAlign: TextAlign.center,
+                ), // Ubah posisi teks ke tengah
                 Divider(color: Colors.black),
                 SizedBox(
                   height: 10,
                 ), // Divider
-                Text("Nomor",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.blue)),
+                Text(
+                  "Nomor",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.blue),
+                ),
                 SizedBox(
                   height: 5,
                 ),
-                Text("0821-3487-99456", textAlign: TextAlign.center),
+                Text(
+                  "0821-3487-99456",
+                  textAlign: TextAlign.center,
+                ),
                 Divider(color: Colors.black),
                 SizedBox(
                   height: 20,
                 ), // Tambahkan jarak antara teks terakhir dan tombol
-                InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Profiledit(),
-                      ),
-                    );
-                  },
-                  child: Container(
-                    height: 34,
-                    width: 99,
-                    decoration: BoxDecoration(
-                      color: Colors.blue, // Warna latar belakang
-                      borderRadius: BorderRadius.circular(8), // Border radius
-                    ),
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        'Edit Profil',
-                        style: TextStyle(
-                          color: Colors.white, // Warna teks
-                          fontWeight: FontWeight.w900, // Ketebalan teks
-                          fontSize: 12, // Ukuran teks
+                Row(
+                  // Menggunakan Row untuk menempatkan tombol di sebelah kanan
+                  mainAxisAlignment: MainAxisAlignment.end, // Posisi kanan
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Profiledit(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        height: 34,
+                        width: 99,
+                        decoration: BoxDecoration(
+                          color: Colors.blue, // Warna latar belakang
+                          borderRadius:
+                              BorderRadius.circular(8), // Border radius
+                        ),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            'Edit Profil',
+                            style: TextStyle(
+                              color: Colors.white, // Warna teks
+                              fontWeight: FontWeight.w900, // Ketebalan teks
+                              fontSize: 12, // Ukuran teks
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
               ],
             ),
