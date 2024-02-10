@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mischool/profil_edit.dart';
 
 class Profil extends StatefulWidget {
   const Profil({Key? key}) : super(key: key);
@@ -116,6 +117,38 @@ class _Profil_mentorState extends State<Profil> {
                 ),
                 Text("0821-3487-99456", textAlign: TextAlign.center),
                 Divider(color: Colors.black),
+                SizedBox(
+                  height: 20,
+                ), // Tambahkan jarak antara teks terakhir dan tombol
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Profiledit(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 34,
+                    width: 99,
+                    decoration: BoxDecoration(
+                      color: Colors.blue, // Warna latar belakang
+                      borderRadius: BorderRadius.circular(8), // Border radius
+                    ),
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Text(
+                        'Edit Profil',
+                        style: TextStyle(
+                          color: Colors.white, // Warna teks
+                          fontWeight: FontWeight.w900, // Ketebalan teks
+                          fontSize: 12, // Ukuran teks
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
