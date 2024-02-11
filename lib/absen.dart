@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:mischool/profil_edit.dart';
 
-class home extends StatefulWidget {
-  const home({Key? key}) : super(key: key);
+class absen extends StatefulWidget {
+  const absen({Key? key}) : super(key: key);
 
   @override
-  State<home> createState() => _home_mentorState();
+  State<absen> createState() => _absen_mentorState();
 }
 
-class _home_mentorState extends State<home> {
+class _absen_mentorState extends State<absen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,105 +81,6 @@ class _home_mentorState extends State<home> {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/Vector (2).png',
-                                      height: 32,
-                                      width: 32,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 74, 74),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Pelanggaran',
-                                style: TextStyle(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/bookmark.png',
-                                      height: 31,
-                                      width: 31,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 48, 220, 148),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Absensi',
-                                style: TextStyle(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/database-alert.png',
-                                      height: 30,
-                                      width: 30,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 93, 136, 255),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Point',
-                                style: TextStyle(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 15,
-                ),
-                Container(
-                  child: Stack(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Container(
                             child: Row(
@@ -208,24 +109,13 @@ class _home_mentorState extends State<home> {
                             ),
                           ),
                           Container(
-                            height: 25,
-                            width: 76,
                             child: Stack(
-                              alignment: Alignment.center,
                               children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Color.fromARGB(108, 115, 187, 255),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                ),
-                                Text(
-                                  'Tampilkan',
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w700,
-                                      color: Color.fromARGB(255, 93, 136, 255)),
-                                ),
+                                Image.asset(
+                                  'assets/images/ia.png',
+                                  height: 11,
+                                  width: 16,
+                                )
                               ],
                             ),
                           )
@@ -242,7 +132,7 @@ class _home_mentorState extends State<home> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        padding: EdgeInsets.only(left: 16, right: 9),
+                        padding: EdgeInsets.only(left: 8, right: 8),
                         height: 31,
                         width: 342,
                         decoration: BoxDecoration(
@@ -263,7 +153,12 @@ class _home_mentorState extends State<home> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             Text(
-                              'Masuk/Pulang',
+                              'Masuk',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            Text(
+                              'Pulang',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
@@ -274,7 +169,7 @@ class _home_mentorState extends State<home> {
                         height: 16,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 40, left: 9),
+                        padding: EdgeInsets.only(left: 8),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -285,7 +180,7 @@ class _home_mentorState extends State<home> {
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
-                            const SizedBox(
+                            SizedBox(
                               width: 1,
                             ),
                             Container(
@@ -310,13 +205,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
-                            const SizedBox(
-                              width: 50,
+                            SizedBox(
+                              width: 20,
                             ),
                             Text(
                               '-',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 60,
+                            ),
+                            Text(
+                              '-',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 1,
                             ),
                           ],
                         ),
@@ -335,6 +241,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -359,10 +268,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -381,6 +304,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -405,10 +331,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -427,6 +367,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -451,10 +394,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -474,6 +431,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -497,10 +457,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -519,6 +493,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -543,10 +520,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -566,6 +557,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -590,10 +584,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -612,6 +620,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -636,10 +647,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -658,6 +683,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -682,10 +710,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
@@ -704,6 +746,9 @@ class _home_mentorState extends State<home> {
                               '10 jan 21',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                             Container(
                               height: 18,
@@ -728,10 +773,24 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              height: 1,
+                            ),
                             Text(
-                              '07:10 - 18:00',
+                              '07:10',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
+                            ),
+                            Text(
+                              '18:00',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              height: 1,
                             ),
                           ],
                         ),
