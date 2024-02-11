@@ -3,11 +3,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:mischool/profil.dart';
 import 'package:mischool/home.dart';
 import 'package:mischool/absen.dart';
-<<<<<<< HEAD
 import 'package:mischool/setting.dart'; // Import halaman setting
-=======
-import 'package:mischool/setting.dart';
->>>>>>> 564006d26c504d427822b8d7af6c7dc3f29bb3d9
 
 void main() {
   runApp(MyApp());
@@ -33,7 +29,6 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 2; // Inisialisasi halaman home sebagai halaman pertama
 
   final List<Widget> _widgetOptions = <Widget>[
-<<<<<<< HEAD
     Container(
       color: Color.fromARGB(255, 255, 255, 255),
       child: Center(
@@ -43,10 +38,6 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     ),
-=======
-    setting(),
-    absen(),
->>>>>>> 564006d26c504d427822b8d7af6c7dc3f29bb3d9
     home(),
     absen(),
     Profil(),
