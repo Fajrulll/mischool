@@ -169,7 +169,7 @@ class _absen_mentorState extends State<absen> {
                         height: 16,
                       ),
                       Container(
-                        padding: EdgeInsets.only(left: 8),
+                        padding: EdgeInsets.only(left: 9, right: 13),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -181,7 +181,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              width: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -214,15 +214,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              width: 60,
+                              width: 70,
                             ),
                             Text(
                               '-',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              width: 1,
                             ),
                           ],
                         ),
@@ -231,7 +228,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -243,7 +240,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -269,7 +266,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -277,15 +274,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -294,7 +288,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -306,7 +300,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -332,7 +326,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -340,15 +334,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -357,7 +348,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -369,7 +360,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -395,7 +386,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -403,15 +394,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -420,12 +408,13 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(left: 9, right: 9),
                         height: 18,
                         width: 342,
                         color: Color.fromARGB(255, 242, 242, 242),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
                               '10 jan 21',
@@ -433,7 +422,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -458,23 +447,20 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 25,
                             ),
                             Text(
-                              '07:10',
+                              '-',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 70,
                             ),
                             Text(
-                              '18:00',
+                              '-',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -483,7 +469,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -495,7 +481,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -521,7 +507,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -529,15 +515,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -546,7 +529,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         color: Color.fromARGB(255, 255, 226, 226),
@@ -559,7 +542,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -585,7 +568,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -593,15 +576,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -610,7 +590,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -622,7 +602,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -648,7 +628,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -656,15 +636,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -673,7 +650,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -685,7 +662,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -711,7 +688,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -719,15 +696,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
@@ -736,7 +710,7 @@ class _absen_mentorState extends State<absen> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -748,7 +722,7 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -774,7 +748,7 @@ class _absen_mentorState extends State<absen> {
                               ),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 10,
                             ),
                             Text(
                               '07:10',
@@ -782,15 +756,12 @@ class _absen_mentorState extends State<absen> {
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             SizedBox(
-                              height: 1,
+                              width: 30,
                             ),
                             Text(
                               '18:00',
                               style: TextStyle(
                                   fontWeight: FontWeight.w400, fontSize: 12),
-                            ),
-                            SizedBox(
-                              height: 1,
                             ),
                           ],
                         ),
