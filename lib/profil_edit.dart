@@ -220,7 +220,7 @@ class _Profiledit_State extends State<Profiledit> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => MyApp(),
+                            builder: (context) => Profil(),
                           ),
                         ); // Tambahkan fungsi untuk tombol kembali di sini
                       },
