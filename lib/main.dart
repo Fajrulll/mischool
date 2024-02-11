@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:mischool/profil.dart';
+import 'package:mischool/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -43,15 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     ),
-    Container(
-      color: Colors.white,
-      child: Center(
-        child: Text(
-          'Home',
-          style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-        ),
-      ),
-    ),
+    home(),
     Profil(), // Here you add the profile page directly
   ];
 
