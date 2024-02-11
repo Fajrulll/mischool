@@ -3,6 +3,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:mischool/profil.dart';
 import 'package:mischool/home.dart';
 import 'package:mischool/absen.dart';
+import 'package:mischool/setting.dart'; // Import halaman setting
 
 void main() {
   runApp(MyApp());
@@ -24,7 +25,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _selectedIndex = 0;
+  late PageController _pageController;
+  int _selectedIndex = 2; // Inisialisasi halaman home sebagai halaman pertama
 
   final List<Widget> _widgetOptions = <Widget>[
     Container(
@@ -36,23 +38,43 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     ),
-    absen(),
     home(),
-    Profil(), // Here you add the profile page directly
+    absen(),
+    Profil(),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    _pageController = PageController(initialPage: _selectedIndex);
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
       backgroundColor: Colors.orange,
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
+      body: PageView.builder(
+        controller: _pageController,
+        itemCount: _widgetOptions.length,
+        itemBuilder: (context, index) {
+          return _widgetOptions[index];
+        },
+        onPageChanged: (index) {
+          setState(() {
+            _selectedIndex = index;
+          });
+        },
       ),
       bottomNavigationBar: CurvedNavigationBar(
-        height: 55, // Set the height here
+        height: 55,
         buttonBackgroundColor: Colors.transparent,
-        // Change button background color to transparent
         color: Colors.blue,
         backgroundColor: Colors.transparent,
         items: <Widget>[
@@ -82,9 +104,18 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
         onTap: (index) {
-          setState(() {
-            _selectedIndex = index;
-          });
+          if (index == 0) {
+            // Navigate to setting page without animation
+            Navigator.pushReplacement(
+                context, MaterialPageRoute(builder: (context) => Setting()));
+          } else {
+            // Navigate to other pages
+            _pageController.animateToPage(
+              index,
+              duration: Duration(milliseconds: 200),
+              curve: Curves.easeInOut,
+            );
+          }
         },
       ),
     );

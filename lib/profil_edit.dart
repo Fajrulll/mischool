@@ -217,7 +217,7 @@ class _Profiledit_State extends State<Profiledit> {
                     // Tombol Kembali
                     InkWell(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pop(
                           context,
                           MaterialPageRoute(
                             builder: (context) => Profil(),
