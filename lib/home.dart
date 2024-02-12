@@ -89,7 +89,7 @@ class _home_mentorState extends State<home> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => pelanggaran()));
+                                      builder: (context) => Pelanggaran()));
                             },
                             child: Column(
                               children: [
