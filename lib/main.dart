@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:mischool/homescreen.dart';
 import 'package:mischool/profil.dart';
 import 'package:mischool/home.dart';
 import 'package:mischool/absen.dart';
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

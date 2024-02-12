@@ -58,7 +58,7 @@ class _Pelanggaran_mentorState extends State<Pelanggaran> {
                   ),
                 ),
                 const SizedBox(
-                  height: 29,
+                  height: 45,
                 ),
                 Container(
                   child: Stack(

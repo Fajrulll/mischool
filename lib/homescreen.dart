@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mischool/profil_edit.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'package:mischool/main.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -58,12 +60,12 @@ class _HomeScreen_mentorState extends State<HomeScreen> {
                             children: [
                               Text(
                                 'Hi, bastian',
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
                                     fontSize: 14, fontWeight: FontWeight.w600),
                               ),
                               Text(
                                 'wali murid anwar',
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
                                     fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
@@ -116,112 +118,158 @@ class _HomeScreen_mentorState extends State<HomeScreen> {
                 const SizedBox(
                   height: 12,
                 ),
-                Container(
-                  padding: EdgeInsets.only(right: 11, left: 19, top: 11),
-                  height: 87,
-                  width: 342,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(15)),
-                    border: Border.all(
-                      color: Color.fromARGB(255, 93, 136, 255),
-                    ),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                Center(
+                  child: Stack(
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Ahmad Effendi',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600, fontSize: 16),
+                      InkWell(
+                        onTap: () {
+                          // Kembali ke halaman sebelumnya
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  MyHomePage(), // Menavigasi ke halaman home
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding:
+                              EdgeInsets.only(right: 11, left: 19, top: 11),
+                          height: 87,
+                          width: 342,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(15)),
+                            border: Border.all(
+                              color: Color.fromARGB(255, 93, 136, 255),
+                            ),
                           ),
-                          const SizedBox(
-                            height: 22,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Ahmad Effendi',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 16),
+                                  ),
+                                  const SizedBox(
+                                    height: 22,
+                                  ),
+                                  Text(
+                                    'XII Multimedia C',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14),
+                                  )
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    '2022-2023',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 12),
+                                  ),
+                                  const SizedBox(
+                                    height: 22,
+                                  ),
+                                  Text(
+                                    'Prasetyo Nugroho',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 12),
+                                  )
+                                ],
+                              ),
+                            ],
                           ),
-                          Text(
-                            'XII Multimedia C',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500, fontSize: 14),
-                          )
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text(
-                            '2022-2023',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500, fontSize: 12),
-                          ),
-                          const SizedBox(
-                            height: 22,
-                          ),
-                          Text(
-                            'Prasetyo Nugroho',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500, fontSize: 12),
-                          )
-                        ],
-                      ),
+                        ),
+                      )
                     ],
                   ),
                 ),
                 const SizedBox(
                   height: 12,
                 ),
-                Container(
-                  padding: EdgeInsets.only(right: 11, left: 19, top: 11),
-                  height: 87,
-                  width: 342,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(15)),
-                    border: Border.all(
-                      color: Color.fromARGB(255, 93, 136, 255),
-                    ),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                Center(
+                  child: Stack(
                     children: [
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Ahmad Effendi',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w600, fontSize: 16),
+                      InkWell(
+                        onTap: () {
+                          // Kembali ke halaman sebelumnya
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  MyHomePage(), // Menavigasi ke halaman home
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding:
+                              EdgeInsets.only(right: 11, left: 19, top: 11),
+                          height: 87,
+                          width: 342,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(15)),
+                            border: Border.all(
+                              color: Color.fromARGB(255, 93, 136, 255),
+                            ),
                           ),
-                          const SizedBox(
-                            height: 22,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Ahmad Effendi',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w600,
+                                        fontSize: 16),
+                                  ),
+                                  const SizedBox(
+                                    height: 22,
+                                  ),
+                                  Text(
+                                    'XII Multimedia C',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 14),
+                                  )
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Text(
+                                    '2022-2023',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 12),
+                                  ),
+                                  const SizedBox(
+                                    height: 22,
+                                  ),
+                                  Text(
+                                    'Prasetyo Nugroho',
+                                    style: GoogleFonts.poppins(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 12),
+                                  )
+                                ],
+                              ),
+                            ],
                           ),
-                          Text(
-                            'XII Multimedia C',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500, fontSize: 14),
-                          )
-                        ],
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text(
-                            '2022-2023',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500, fontSize: 12),
-                          ),
-                          const SizedBox(
-                            height: 22,
-                          ),
-                          Text(
-                            'Prasetyo Nugroho',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w500, fontSize: 12),
-                          )
-                        ],
-                      ),
+                        ),
+                      )
                     ],
                   ),
                 ),
@@ -271,7 +319,8 @@ class _HomeScreen_mentorState extends State<HomeScreen> {
                 ),
                 Text(
                   'Kategori SP 1',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  style: GoogleFonts.poppins(
+                      fontSize: 16, fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(
                   height: 10,
@@ -283,33 +332,33 @@ class _HomeScreen_mentorState extends State<HomeScreen> {
                     children: [
                       Text(
                         '• Memakai sepatu warna selain hitam',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Tidak memakai seragam sesuai Jadwal',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Rambut terlalu gondrong',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Membawa Rokok',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Membawa Kosmetik',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Membawa alat senjata tajam atau sejenisnya',
                         maxLines: 1,
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                     ],
@@ -320,7 +369,8 @@ class _HomeScreen_mentorState extends State<HomeScreen> {
                 ),
                 Text(
                   'Kategori SP 2',
-                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                  style: GoogleFonts.poppins(
+                      fontSize: 14, fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(
                   height: 10,
@@ -332,32 +382,32 @@ class _HomeScreen_mentorState extends State<HomeScreen> {
                     children: [
                       Text(
                         '• Berkelahi',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Tawuran',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Mabok',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Memakai Narkotika',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Melakukan Asusila',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                       Text(
                         '• Mencoreng Nama Sekolah',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                             fontSize: 14, fontWeight: FontWeight.w400),
                       ),
                     ],
