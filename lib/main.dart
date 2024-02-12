@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: CurvedNavigationBar(
         height: 55,
-        buttonBackgroundColor: Colors.transparent,
+        buttonBackgroundColor: Colors.white,
         color: Colors.blue,
         backgroundColor: Colors.transparent,
         items: <Widget>[
