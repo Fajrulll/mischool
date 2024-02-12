@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mischool/pelanggaran.dart';
 import 'package:mischool/profil_edit.dart';
 
 class home extends StatefulWidget {
@@ -83,33 +84,42 @@ class _home_mentorState extends State<home> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/Vector (2).png',
-                                      height: 32,
-                                      width: 32,
-                                    ),
-                                  ],
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => pelanggaran()));
+                            },
+                            child: Column(
+                              children: [
+                                Container(
+                                  alignment: Alignment.center,
+                                  height: 54,
+                                  width: 102,
+                                  child: Stack(
+                                    children: [
+                                      Image.asset(
+                                        'assets/images/Vector (2).png',
+                                        height: 32,
+                                        width: 32,
+                                      ),
+                                    ],
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: Color.fromARGB(255, 255, 74, 74),
+                                    borderRadius: BorderRadius.circular(13),
+                                    boxShadow: [],
+                                  ),
                                 ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 255, 74, 74),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
+                                Text(
+                                  'Pelanggaran',
+                                  style: TextStyle(
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w400),
                                 ),
-                              ),
-                              Text(
-                                'Pelanggaran',
-                                style: TextStyle(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                           Column(
                             children: [

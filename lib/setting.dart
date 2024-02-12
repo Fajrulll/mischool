@@ -17,12 +17,12 @@ class _SettingState extends State<Setting> {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Padding(
-          padding: EdgeInsets.only(left: 30), // Menambahkan padding dari kiri
+          padding: EdgeInsets.only(left: 25), // Menambahkan padding dari kiri
           child: IconButton(
             icon: Icon(Icons.arrow_back, color: Colors.blue),
             onPressed: () {
               // Kembali ke halaman home dengan menutup semua rute lainnya
-              Navigator.popUntil(context, (route) => route.isFirst);
+              Navigator.pop(context, (route) => home());
             },
           ),
         ),
@@ -54,7 +54,7 @@ class _SettingState extends State<Setting> {
           ),
           SizedBox(height: 30),
           buildSection('Notifikasi', 'assets/images/line2.png',
-              false), // False untuk menampilkan garis di kanan
+              true), // False untuk menampilkan garis di kanan
           Divider(),
           buildNotificationListTile(
             title: 'Notifikasi',
@@ -76,7 +76,7 @@ class _SettingState extends State<Setting> {
           ),
           SizedBox(height: 30),
           buildSection('Lainnya', 'assets/images/line3.png',
-              false), // False untuk menampilkan garis di kanan
+              true), // False untuk menampilkan garis di kanan
           Divider(),
           buildListTileWithIcon(
             title: 'Kebijakan Privasi',
