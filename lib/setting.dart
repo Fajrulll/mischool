@@ -17,28 +17,32 @@ class _SettingState extends State<Setting> {
         backgroundColor: Colors.white,
         elevation: 0,
         leading: Padding(
-          padding: EdgeInsets.only(left: 25), // Menambahkan padding dari kiri
-          child: IconButton(
-            icon: Icon(Icons.arrow_back, color: Colors.blue),
-            onPressed: () {
-              // Kembali ke halaman home dengan menutup semua rute lainnya
-              Navigator.pop(context, (route) => home());
+          padding: EdgeInsets.only(left: 25),
+          child: InkWell(
+            onTap: () {
+              // Kembali ke halaman sebelumnya
+              Navigator.pop(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => home(), // Menavigasi ke halaman home
+                ),
+              );
             },
+            child: Icon(Icons.arrow_back, color: Colors.blue),
           ),
         ),
         title: Text(
           'Pengaturan',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
-          textAlign: TextAlign.center, // Atur teks menjadi di tengah
+          textAlign: TextAlign.center,
         ),
-        centerTitle: true, // Teks "Pengaturan" berada di tengah app bar
+        centerTitle: true,
       ),
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 5),
+        padding: EdgeInsets.symmetric(horizontal: 35, vertical: 5),
         children: [
-          SizedBox(height: 64),
-          buildSection('Akun', 'assets/images/line1.png',
-              true), // True untuk menampilkan garis di kiri
+          SizedBox(height: 50),
+          buildSection('Akun', 'assets/images/line1.png', true),
           Divider(),
           buildListTileWithIcon(
             title: 'Profil',
@@ -52,9 +56,8 @@ class _SettingState extends State<Setting> {
             width: 7,
             height: 12,
           ),
-          SizedBox(height: 30),
-          buildSection('Notifikasi', 'assets/images/line2.png',
-              true), // False untuk menampilkan garis di kanan
+          SizedBox(height: 10),
+          buildSection('Notifikasi', 'assets/images/line2.png', true),
           Divider(),
           buildNotificationListTile(
             title: 'Notifikasi',
@@ -74,9 +77,8 @@ class _SettingState extends State<Setting> {
               });
             },
           ),
-          SizedBox(height: 30),
-          buildSection('Lainnya', 'assets/images/line3.png',
-              true), // False untuk menampilkan garis di kanan
+          SizedBox(height: 10),
+          buildSection('Lainnya', 'assets/images/line3.png', true),
           Divider(),
           buildListTileWithIcon(
             title: 'Kebijakan Privasi',
@@ -84,7 +86,7 @@ class _SettingState extends State<Setting> {
             width: 7,
             height: 12,
           ),
-          SizedBox(height: 40),
+          SizedBox(height: 30),
           Container(
             child: Column(
               children: [
@@ -120,7 +122,7 @@ class _SettingState extends State<Setting> {
                           ),
                         ),
                         Positioned(
-                          left: 24, // Menggeser ikon ke kanan
+                          left: 24,
                           child: Image.asset(
                             'assets/images/elipse1.png',
                             width: 14,
@@ -128,7 +130,7 @@ class _SettingState extends State<Setting> {
                           ),
                         ),
                         Positioned(
-                          left: 45, // Menggeser teks "Logout" ke kiri
+                          left: 45,
                           child: Text(
                             'Logout',
                             style: TextStyle(
@@ -141,6 +143,21 @@ class _SettingState extends State<Setting> {
                       ],
                     ),
                   ),
+                ),
+                SizedBox(
+                    height:
+                        85), // Spacer antara tombol Log Out dan gambar logo[Mischool]
+                Image.asset(
+                  'assets/images/logo[Mischool] 1.png', // Ganti dengan path gambar logo[Mischool]
+                  height: 27, // Sesuaikan dengan tinggi gambar
+                  width: 91, // Sesuaikan dengan lebar gambar
+                ),
+                SizedBox(
+                    height: 5), // Spacer antara logo[Mischool] dan gambar teks
+                Image.asset(
+                  'assets/images/teks.png', // Ganti dengan path gambar teks
+                  height: 16, // Sesuaikan dengan tinggi gambar
+                  width: 151, // Sesuaikan dengan lebar gambar
                 ),
               ],
             ),
@@ -162,7 +179,7 @@ class _SettingState extends State<Setting> {
           Expanded(
             child: Text(
               title,
-              style: TextStyle(fontSize: 16), // Menambahkan font size
+              style: TextStyle(fontSize: 16),
             ),
           ),
           Spacer(),
@@ -190,11 +207,11 @@ class _SettingState extends State<Setting> {
           Expanded(
             child: Text(
               title,
-              style: TextStyle(fontSize: 16), // Menambahkan font size
+              style: TextStyle(fontSize: 16),
             ),
           ),
           Transform.scale(
-            scale: 0.8, // Atur faktor skala sesuai kebutuhan
+            scale: 0.8,
             child: Switch(
               value: value,
               onChanged: onChanged,
@@ -215,10 +232,8 @@ class _SettingState extends State<Setting> {
   Widget buildSection(String title, String lineImage, bool showLeftLine) {
     return Row(
       children: [
-        if (showLeftLine)
-          Image.asset(lineImage,
-              height: 20), // Gambar garis di kiri jika diperlukan
-        SizedBox(width: 10), // Spacer antara garis dan teks
+        if (showLeftLine) Image.asset(lineImage, height: 25),
+        SizedBox(width: 5),
         Text(
           title,
           style: TextStyle(
@@ -226,10 +241,6 @@ class _SettingState extends State<Setting> {
             fontSize: 18,
           ),
         ),
-        SizedBox(width: 10), // Spacer antara teks dan garis
-        if (!showLeftLine)
-          Image.asset(lineImage,
-              height: 20), // Gambar garis di kanan jika diperlukan
       ],
     );
   }
