@@ -91,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
             height: 55,
             buttonBackgroundColor: Colors.white,
             color: Colors.blue,
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.white,
             items: <Widget>[
               Image.asset(
                 'assets/images/Setting.png',
