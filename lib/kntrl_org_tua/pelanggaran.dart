@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mischool/charts.dart';
 import 'package:mischool/kntrl_org_tua/home.dart';
 import 'package:mischool/kntrl_org_tua/profil_edit.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
 
 class Pelanggaran extends StatefulWidget {
   const Pelanggaran({Key? key}) : super(key: key);
@@ -224,11 +226,12 @@ class _Pelanggaran_mentorState extends State<Pelanggaran> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                    child: Image.asset(
-                                  'assets/images/Group 89.png',
-                                  height: 11,
-                                  width: 3,
-                                )),
+                                  child: Image.asset(
+                                    'assets/images/Group 89.png',
+                                    height: 11,
+                                    width: 3,
+                                  ),
+                                ),
                                 const SizedBox(
                                   width: 10,
                                 ),
@@ -246,6 +249,10 @@ class _Pelanggaran_mentorState extends State<Pelanggaran> {
                             ),
                           ),
                         ],
+                      ),
+                      Container(
+                        child:
+                            SfCircularChart(), // Tampilkan widget chart di bawah teks
                       ),
                       const SizedBox(
                         height: 10,
