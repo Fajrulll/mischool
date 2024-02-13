@@ -244,7 +244,7 @@ class _Profiledit_State extends State<Profiledit> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 32), // Jarak antara tombol
+                    SizedBox(width: 2), // Jarak antara tombol
                     // Tombol Edit Profil
                     InkWell(
                       onTap: () {
