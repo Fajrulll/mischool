@@ -1,11 +1,21 @@
-import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:flutter/material.dart';
+/* import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:mischool/kntrl_org_tua/homescreen.dart';
 import 'package:mischool/kntrl_org_tua/profil.dart';
 import 'package:mischool/kntrl_org_tua/home.dart';
 import 'package:mischool/kntrl_org_tua/absen.dart';
-import 'package:mischool/kntrl_org_tua/setting.dart';
-// import 'package:mischool/homescreen.dart';
+import 'package:mischool/kntrl_org_tua/setting.dart'; */
+
+import 'package:mischool/Siswa/profil.dart';
+import 'package:mischool/Siswa/home.dart';
+import 'package:mischool/Siswa/absen.dart';
+import 'package:mischool/Siswa/setting.dart';
+
+/* import 'package:mischool/Guru/profil.dart';
+import 'package:mischool/Guru/home.dart';
+import 'package:mischool/Guru/absen.dart';
+import 'package:mischool/Guru/setting.dart'; */
 
 void main() {
   runApp(MyApp());
@@ -15,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomeScreen(),
+      home: MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
