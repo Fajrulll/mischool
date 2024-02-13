@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mischool/home.dart';
+import 'package:mischool/kntrl_org_tua/home.dart';
 
 class Setting extends StatefulWidget {
   @override

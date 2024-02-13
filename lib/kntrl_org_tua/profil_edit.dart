@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mischool/main.dart';
-import 'package:mischool/profil.dart';
-import 'profil_edit.dart'; // Sesuaikan dengan nama file dan lokasi yang benar
+import 'package:mischool/kntrl_org_tua/profil.dart';
 
 class Profiledit extends StatefulWidget {
   const Profiledit({Key? key}) : super(key: key);

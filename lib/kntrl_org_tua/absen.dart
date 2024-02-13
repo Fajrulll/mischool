@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:mischool/pelanggaran.dart';
-import 'package:mischool/profil_edit.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:mischool/kntrl_org_tua/profil_edit.dart';
 
-class home extends StatefulWidget {
-  const home({Key? key}) : super(key: key);
+class absen extends StatefulWidget {
+  const absen({Key? key}) : super(key: key);
 
   @override
-  State<home> createState() => _home_mentorState();
+  State<absen> createState() => _absen_mentorState();
 }
 
-class _home_mentorState extends State<home> {
+class _absen_mentorState extends State<absen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,12 +59,12 @@ class _home_mentorState extends State<home> {
                             children: [
                               Text(
                                 'Hi, bastian',
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
                                     fontSize: 14, fontWeight: FontWeight.w600),
                               ),
                               Text(
                                 'wali murid anwar',
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
                                     fontSize: 12, fontWeight: FontWeight.w400),
                               )
                             ],
@@ -76,114 +76,6 @@ class _home_mentorState extends State<home> {
                 ),
                 const SizedBox(
                   height: 20,
-                ),
-                Container(
-                  child: Stack(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => Pelanggaran()));
-                            },
-                            child: Column(
-                              children: [
-                                Container(
-                                  alignment: Alignment.center,
-                                  height: 54,
-                                  width: 102,
-                                  child: Stack(
-                                    children: [
-                                      Image.asset(
-                                        'assets/images/Vector (2).png',
-                                        height: 32,
-                                        width: 32,
-                                      ),
-                                    ],
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: Color.fromARGB(255, 255, 74, 74),
-                                    borderRadius: BorderRadius.circular(13),
-                                    boxShadow: [],
-                                  ),
-                                ),
-                                Text(
-                                  'Pelanggaran',
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/bookmark.png',
-                                      height: 31,
-                                      width: 31,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 48, 220, 148),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Absensi',
-                                style: TextStyle(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/database-alert.png',
-                                      height: 30,
-                                      width: 30,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 93, 136, 255),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Point',
-                                style: TextStyle(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  height: 15,
                 ),
                 Container(
                   child: Stack(
@@ -218,24 +110,13 @@ class _home_mentorState extends State<home> {
                             ),
                           ),
                           Container(
-                            height: 25,
-                            width: 76,
                             child: Stack(
-                              alignment: Alignment.center,
                               children: [
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color: Color.fromARGB(108, 115, 187, 255),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                ),
-                                Text(
-                                  'Tampilkan',
-                                  style: TextStyle(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w700,
-                                      color: Color.fromARGB(255, 93, 136, 255)),
-                                ),
+                                Image.asset(
+                                  'assets/images/ia.png',
+                                  height: 11,
+                                  width: 16,
+                                )
                               ],
                             ),
                           )
@@ -252,7 +133,7 @@ class _home_mentorState extends State<home> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        padding: EdgeInsets.only(left: 16, right: 9),
+                        padding: EdgeInsets.only(left: 8, right: 8),
                         height: 31,
                         width: 342,
                         decoration: BoxDecoration(
@@ -264,17 +145,22 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               'Tanggal',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             Text(
                               'Status',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                             Text(
-                              'Masuk/Pulang',
-                              style: TextStyle(
+                              'Masuk',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            Text(
+                              'Pulang',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -284,7 +170,7 @@ class _home_mentorState extends State<home> {
                         height: 16,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 40, left: 9),
+                        padding: EdgeInsets.only(left: 9, right: 13),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -292,11 +178,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
-                            const SizedBox(
-                              width: 1,
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -312,7 +198,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Izin',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color: Color(0xFFFDCB17)),
@@ -320,12 +206,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
-                            const SizedBox(
-                              width: 50,
+                            SizedBox(
+                              width: 20,
                             ),
                             Text(
                               '-',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 70,
+                            ),
+                            Text(
+                              '-',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -335,7 +229,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -343,8 +237,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -360,7 +257,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Telat',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -369,9 +266,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -381,7 +289,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -389,8 +297,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -406,7 +317,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Masuk',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -415,9 +326,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -427,7 +349,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -435,8 +357,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -452,7 +377,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Masuk',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -461,9 +386,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -473,17 +409,21 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(left: 9, right: 9),
                         height: 18,
                         width: 342,
                         color: Color.fromARGB(255, 242, 242, 242),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 10,
                             ),
                             Container(
                               height: 18,
@@ -499,7 +439,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     '-',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color: Color.fromARGB(255, 68, 68, 68)),
@@ -507,9 +447,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 25,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '-',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 70,
+                            ),
+                            Text(
+                              '-',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -519,7 +470,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -527,8 +478,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -544,7 +498,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Telat',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -553,9 +507,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -565,7 +530,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         color: Color.fromARGB(255, 255, 226, 226),
@@ -574,8 +539,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -591,7 +559,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Alfa',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -600,9 +568,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -612,7 +591,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -620,8 +599,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -637,7 +619,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Masuk',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -646,9 +628,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -658,7 +651,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -666,8 +659,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -683,7 +679,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Masuk',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -692,9 +688,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],
@@ -704,7 +711,7 @@ class _home_mentorState extends State<home> {
                         height: 21,
                       ),
                       Container(
-                        padding: EdgeInsets.only(right: 16, left: 9),
+                        padding: EdgeInsets.only(right: 9, left: 9),
                         height: 18,
                         width: 342,
                         child: Row(
@@ -712,8 +719,11 @@ class _home_mentorState extends State<home> {
                           children: [
                             Text(
                               '10 jan 21',
-                              style: TextStyle(
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 5,
                             ),
                             Container(
                               height: 18,
@@ -729,7 +739,7 @@ class _home_mentorState extends State<home> {
                                   ),
                                   Text(
                                     'Masuk',
-                                    style: TextStyle(
+                                    style: GoogleFonts.poppins(
                                         fontSize: 13,
                                         fontWeight: FontWeight.w700,
                                         color:
@@ -738,9 +748,20 @@ class _home_mentorState extends State<home> {
                                 ],
                               ),
                             ),
+                            SizedBox(
+                              width: 10,
+                            ),
                             Text(
-                              '07:10 - 18:00',
-                              style: TextStyle(
+                              '07:10',
+                              style: GoogleFonts.poppins(
+                                  fontWeight: FontWeight.w400, fontSize: 12),
+                            ),
+                            SizedBox(
+                              width: 30,
+                            ),
+                            Text(
+                              '18:00',
+                              style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w400, fontSize: 12),
                             ),
                           ],

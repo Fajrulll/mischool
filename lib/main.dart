@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:mischool/homescreen.dart';
-import 'package:mischool/profil.dart';
-import 'package:mischool/home.dart';
-import 'package:mischool/absen.dart';
-import 'package:mischool/setting.dart';
+import 'package:mischool/kntrl_org_tua/homescreen.dart';
+import 'package:mischool/kntrl_org_tua/profil.dart';
+import 'package:mischool/kntrl_org_tua/home.dart';
+import 'package:mischool/kntrl_org_tua/absen.dart';
+import 'package:mischool/kntrl_org_tua/setting.dart';
 // import 'package:mischool/homescreen.dart';
 
 void main() {

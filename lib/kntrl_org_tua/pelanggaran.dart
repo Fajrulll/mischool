@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mischool/home.dart';
-import 'package:mischool/profil_edit.dart';
+import 'package:mischool/kntrl_org_tua/home.dart';
+import 'package:mischool/kntrl_org_tua/profil_edit.dart';
 
 class Pelanggaran extends StatefulWidget {
   const Pelanggaran({Key? key}) : super(key: key);

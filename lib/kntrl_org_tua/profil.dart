@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mischool/profil_edit.dart';
+import 'package:mischool/kntrl_org_tua/profil_edit.dart';
 
 class Profil extends StatefulWidget {
   const Profil({Key? key}) : super(key: key);
