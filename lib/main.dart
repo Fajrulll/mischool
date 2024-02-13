@@ -122,6 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
               if (index == 0) {
                 // Navigate to setting page using PageRouteBuilder for custom animation
                 Navigator.of(context).push(PageRouteBuilder(
+                  transitionDuration: Duration(milliseconds: 1000),
                   pageBuilder: (context, animation, secondaryAnimation) =>
                       Setting(),
                   transitionsBuilder:
@@ -143,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 // Navigate to other pages
                 _pageController.animateToPage(
                   index,
-                  duration: Duration(milliseconds: 200),
+                  duration: Duration(milliseconds: 1000),
                   curve: Curves.easeInOut,
                 );
               }
