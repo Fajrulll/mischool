@@ -16,12 +16,12 @@ class _Profiledit_State extends State<Profiledit> {
       body: ListView(
         children: [
           SizedBox(
-            height: 52,
+            height: 30,
           ),
           // Title and Back Arrow
           Container(
             margin: EdgeInsets.only(
-                left: 51), // Sesuaikan margin agar judul agak ke kiri
+                left: 30), // Sesuaikan margin agar judul agak ke kiri
             child: Text(
               'Edit Profil', // Ubah judul menjadi "Profil"
               style: TextStyle(
@@ -74,7 +74,7 @@ class _Profiledit_State extends State<Profiledit> {
           ),
           // Text Fields
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 50),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
                 SizedBox(
@@ -244,7 +244,7 @@ class _Profiledit_State extends State<Profiledit> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 32), // Jarak antara tombol
+                    SizedBox(width: 2), // Jarak antara tombol
                     // Tombol Edit Profil
                     InkWell(
                       onTap: () {
