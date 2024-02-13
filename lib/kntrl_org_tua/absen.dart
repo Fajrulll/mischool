@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mischool/kntrl_org_tua/profil_edit.dart';
 
 class absen extends StatefulWidget {
   const absen({Key? key}) : super(key: key);

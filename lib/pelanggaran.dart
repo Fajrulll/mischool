@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import 'package:mischool/kntrl_org_tua/home.dart';
-import 'package:syncfusion_flutter_charts/charts.dart';
 
 class Pelanggaran extends StatefulWidget {
   const Pelanggaran({Key? key}) : super(key: key);
@@ -225,12 +223,11 @@ class _Pelanggaran_mentorState extends State<Pelanggaran> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                  child: Image.asset(
-                                    'assets/images/Group 89.png',
-                                    height: 11,
-                                    width: 3,
-                                  ),
-                                ),
+                                    child: Image.asset(
+                                  'assets/images/Group 89.png',
+                                  height: 11,
+                                  width: 3,
+                                )),
                                 const SizedBox(
                                   width: 10,
                                 ),
@@ -249,17 +246,11 @@ class _Pelanggaran_mentorState extends State<Pelanggaran> {
                           ),
                         ],
                       ),
-                      Container(
-                        margin: EdgeInsets.only(
-                            top: 30), // Atur margin sesuai kebutuhan
-                        child:
-                            SfCircularChart(), // Tampilkan widget chart di bawah teks
-                      ),
                       const SizedBox(
                         height: 10,
                       ),
                       Container(
-                        height: 183, // Atur tinggi Container sesuai kebutuhan
+                        height: 183,
                       ),
                       const SizedBox(
                         height: 10,
