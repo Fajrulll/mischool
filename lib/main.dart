@@ -7,15 +7,15 @@ import 'package:mischool/kntrl_org_tua/home.dart';
 import 'package:mischool/kntrl_org_tua/absen.dart';
 import 'package:mischool/kntrl_org_tua/setting.dart'; */
 
-import 'package:mischool/Siswa/profil.dart';
-import 'package:mischool/Siswa/home.dart';
-import 'package:mischool/Siswa/absen.dart';
-import 'package:mischool/Siswa/setting.dart';
+// import 'package:mischool/Siswa/profil.dart';
+// import 'package:mischool/Siswa/home.dart';
+// import 'package:mischool/Siswa/absen.dart';
+// import 'package:mischool/Siswa/setting.dart';
 
-/* import 'package:mischool/Guru/profil.dart';
+import 'package:mischool/Guru/profil.dart';
 import 'package:mischool/Guru/home.dart';
 import 'package:mischool/Guru/absen.dart';
-import 'package:mischool/Guru/setting.dart'; */
+import 'package:mischool/Guru/setting.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,8 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final List<Widget> _widgetOptions = <Widget>[
     Setting(),
-    absen(),
     home(),
+    absen(),
     Profil(),
   ];
 

@@ -45,7 +45,7 @@ class _Profiledit_State extends State<Profiledit> {
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
-                      image: AssetImage('assets/images/profil.png'),
+                      image: AssetImage('assets/images/profil2.png'),
                       fit: BoxFit.cover,
                     ),
                   ),

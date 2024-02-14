@@ -60,7 +60,7 @@ class _Profil_State extends State<Profil> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/images/profil.png'),
+                  image: AssetImage('assets/images/profil2.png'),
                   // Replace 'avatar.png' with your actual image asset path
                   fit: BoxFit.cover,
                 ),
