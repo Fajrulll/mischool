@@ -126,7 +126,6 @@ class _home_mentorState extends State<home> {
                     color: Color.fromARGB(255, 242, 242, 242),
                   ),
                   child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Stack(
