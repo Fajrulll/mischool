@@ -74,105 +74,68 @@ class _home_mentorState extends State<home> {
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 24,
                 ),
                 Container(
                   child: Stack(
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          InkWell(
-                            onTap: () {},
-                            child: Column(
+                          Container(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                  alignment: Alignment.center,
-                                  height: 54,
-                                  width: 102,
-                                  child: Stack(
-                                    children: [
-                                      Image.asset(
-                                        'assets/images/Vector (2).png',
-                                        height: 32,
-                                        width: 32,
-                                      ),
-                                    ],
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: Color.fromARGB(255, 255, 74, 74),
-                                    borderRadius: BorderRadius.circular(13),
-                                    boxShadow: [],
-                                  ),
+                                    child: Image.asset(
+                                  'assets/images/Group 89.png',
+                                  height: 11,
+                                  width: 3,
+                                )),
+                                const SizedBox(
+                                  width: 10,
                                 ),
-                                Text(
-                                  'Pelanggaran',
-                                  style: GoogleFonts.poppins(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400),
-                                ),
+                                Container(
+                                  child: Text(
+                                    'Absensi Hari Ini',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.w700,
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                    ),
+                                  ),
+                                )
                               ],
                             ),
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/bookmark.png',
-                                      height: 31,
-                                      width: 31,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 48, 220, 148),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Absensi',
-                                style: GoogleFonts.poppins(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
-                          ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/database-alert.png',
-                                      height: 30,
-                                      width: 30,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 93, 136, 255),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Point',
-                                style: GoogleFonts.poppins(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
-                          ),
                         ],
                       ),
+                    ],
+                  ),
+                ),
+                const SizedBox(
+                  height: 16,
+                ),
+                Container(
+                  height: 80,
+                  width: 342,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color.fromARGB(255, 242, 242, 242),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                          height: 64,
+                          width: 54,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(16),
+                              color: Color.fromARGB(255, 93, 136, 255)),
+                        ),
+                      )
                     ],
                   ),
                 ),

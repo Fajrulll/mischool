@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:mischool/kntrl_org_tua/homescreen.dart';
+/* import 'package:mischool/kntrl_org_tua/homescreen.dart';
 import 'package:mischool/kntrl_org_tua/profil.dart';
 import 'package:mischool/kntrl_org_tua/home.dart';
 import 'package:mischool/kntrl_org_tua/absen.dart';
-import 'package:mischool/kntrl_org_tua/setting.dart';
+import 'package:mischool/kntrl_org_tua/setting.dart'; */
 
-//import 'package:mischool/Siswa/profil.dart';
-//import 'package:mischool/Siswa/home.dart';
-//import 'package:mischool/Siswa/absen.dart';
-//import 'package:mischool/Siswa/setting.dart';
+import 'package:mischool/Siswa/profil.dart';
+import 'package:mischool/Siswa/home.dart';
+import 'package:mischool/Siswa/absen.dart';
+import 'package:mischool/Siswa/setting.dart';
 
 //import 'package:mischool/Guru/profil.dart';
 //import 'package:mischool/Guru/home.dart';
