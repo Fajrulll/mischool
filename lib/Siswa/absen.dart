@@ -44,7 +44,7 @@ class _absen_mentorState extends State<absen> {
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
                               image: DecorationImage(
-                                image: AssetImage('assets/images/profil.png'),
+                                image: AssetImage('assets/images/profil2.png'),
                                 // Replace 'avatar.png' with your actual image asset path
                                 fit: BoxFit.cover,
                               ),
@@ -57,12 +57,12 @@ class _absen_mentorState extends State<absen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Hi, bastian',
+                                'Hi, Joko',
                                 style: GoogleFonts.poppins(
                                     fontSize: 14, fontWeight: FontWeight.w600),
                               ),
                               Text(
-                                'wali murid anwar',
+                                'Siswa',
                                 style: GoogleFonts.poppins(
                                     fontSize: 12, fontWeight: FontWeight.w400),
                               )

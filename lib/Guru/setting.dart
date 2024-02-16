@@ -23,9 +23,8 @@ class _SettingState extends State<Setting> {
               // Kembali ke halaman sebelumnya
               Navigator.pop(
                 context,
-                MaterialPageRoute(
-                  builder: (context) => home(), // Menavigasi ke halaman home
-                ),
+
+                (context) => home(), // Menavigasi ke halaman home
               );
             },
             child: Icon(Icons.arrow_back, color: Colors.blue),

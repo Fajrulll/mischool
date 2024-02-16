@@ -60,7 +60,7 @@ class _Profil_State extends State<Profil> {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                  image: AssetImage('assets/images/profil.png'),
+                  image: AssetImage('assets/images/profil2.png'),
                   // Replace 'avatar.png' with your actual image asset path
                   fit: BoxFit.cover,
                 ),
@@ -85,7 +85,7 @@ class _Profil_State extends State<Profil> {
                   height: 5,
                 ), // Ubah posisi teks ke tengah
                 Text(
-                  "Bastian",
+                  "Joko",
                   textAlign: TextAlign.center,
                 ), // Ubah posisi teks ke tengah
                 Divider(color: Colors.black),
@@ -101,7 +101,7 @@ class _Profil_State extends State<Profil> {
                   height: 5,
                 ), // Ubah posisi teks ke tengah
                 Text(
-                  "Begawan Malang",
+                  "Karang Ploso, Malang",
                   textAlign: TextAlign.center,
                 ), // Ubah posisi teks ke tengah
                 Divider(color: Colors.black),
@@ -117,7 +117,7 @@ class _Profil_State extends State<Profil> {
                   height: 5,
                 ), // Ubah posisi teks ke tengah
                 Text(
-                  "bastian223@gmail.com",
+                  "joko2312@gmail.com",
                   textAlign: TextAlign.center,
                 ), // Ubah posisi teks ke tengah
                 Divider(color: Colors.black),
@@ -133,7 +133,7 @@ class _Profil_State extends State<Profil> {
                   height: 5,
                 ),
                 Text(
-                  "0821-3487-99456",
+                  "0833-8987-45759",
                   textAlign: TextAlign.center,
                 ),
                 Divider(color: Colors.black),

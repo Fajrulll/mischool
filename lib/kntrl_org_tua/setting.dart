@@ -22,8 +22,12 @@ class _SettingState extends State<Setting> {
           padding: EdgeInsets.only(left: 25),
           child: InkWell(
             onTap: () {
-              // Kembali ke halaman home
-              Navigator.popUntil(context, (route) => route.isFirst);
+              // Kembali ke halaman sebelumnya
+              Navigator.pop(
+                context,
+
+                (context) => home(), // Menavigasi ke halaman home
+              );
             },
             child: Icon(Icons.arrow_back, color: Colors.blue),
           ),

@@ -57,12 +57,12 @@ class _absen_mentorState extends State<absen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Hi, bastian',
+                                'Hi, Joko',
                                 style: GoogleFonts.poppins(
                                     fontSize: 14, fontWeight: FontWeight.w600),
                               ),
                               Text(
-                                'wali murid anwar',
+                                'Guru Pengajar',
                                 style: GoogleFonts.poppins(
                                     fontSize: 12, fontWeight: FontWeight.w400),
                               )

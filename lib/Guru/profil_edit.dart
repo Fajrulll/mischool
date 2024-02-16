@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:mischool/Guru/profil.dart';
+import 'package:mischool/main.dart';
+import 'package:mischool/kntrl_org_tua/profil.dart';
 
 class Profiledit extends StatefulWidget {
   const Profiledit({Key? key}) : super(key: key);
@@ -21,7 +21,7 @@ class _Profiledit_State extends State<Profiledit> {
           // Title and Back Arrow
           Container(
             margin: EdgeInsets.only(
-                left: 30), // Sesuaikan margin agar judul agak ke kiri
+                left: 60), // Sesuaikan margin agar judul agak ke kiri
             child: Text(
               'Edit Profil', // Ubah judul menjadi "Profil"
               style: TextStyle(
@@ -74,11 +74,11 @@ class _Profiledit_State extends State<Profiledit> {
           ),
           // Text Fields
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Column(
               children: [
                 SizedBox(
-                  width: 289,
+                  width: 315,
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Text(
@@ -93,17 +93,23 @@ class _Profiledit_State extends State<Profiledit> {
                 ),
                 SizedBox(
                   height: 40,
-                  width: 289,
+                  width: 315,
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: EdgeInsets.only(left: 10, top: 15),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(11),
                       border: Border.all(color: Colors.grey, width: 1),
                     ),
-                    child: Text(
-                      "Bastian",
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Masukkan nama',
+                        hintStyle:
+                            TextStyle(color: Colors.grey), // Gaya teks hint
+                        border: InputBorder.none,
+                      ),
                       textAlign: TextAlign.left,
                       style: TextStyle(color: Colors.black, fontSize: 16),
+                      controller: TextEditingController(),
                     ),
                   ),
                 ),
@@ -111,7 +117,7 @@ class _Profiledit_State extends State<Profiledit> {
                   height: 18,
                 ),
                 SizedBox(
-                  width: 289,
+                  width: 315,
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Text(
@@ -126,17 +132,23 @@ class _Profiledit_State extends State<Profiledit> {
                 ),
                 SizedBox(
                   height: 40,
-                  width: 289,
+                  width: 315,
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: EdgeInsets.only(left: 10, top: 15),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(11),
                       border: Border.all(color: Colors.grey, width: 1),
                     ),
-                    child: Text(
-                      "Begawan, Malang",
-                      textAlign: TextAlign.left,
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Masukkan alamat',
+                        hintStyle:
+                            TextStyle(color: Colors.grey), // Gaya teks hint
+                        border: InputBorder.none,
+                      ),
+                      textAlign: TextAlign.start,
                       style: TextStyle(color: Colors.black, fontSize: 16),
+                      controller: TextEditingController(),
                     ),
                   ),
                 ),
@@ -144,7 +156,7 @@ class _Profiledit_State extends State<Profiledit> {
                   height: 18,
                 ),
                 SizedBox(
-                  width: 289,
+                  width: 315,
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Text(
@@ -159,17 +171,23 @@ class _Profiledit_State extends State<Profiledit> {
                 ),
                 SizedBox(
                   height: 40,
-                  width: 289,
+                  width: 315,
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: EdgeInsets.only(left: 10, top: 15),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(11),
                       border: Border.all(color: Colors.grey, width: 1),
                     ),
-                    child: Text(
-                      "bastian223@gmail.com",
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Masukkan email',
+                        hintStyle:
+                            TextStyle(color: Colors.grey), // Gaya teks hint
+                        border: InputBorder.none,
+                      ),
                       textAlign: TextAlign.left,
                       style: TextStyle(color: Colors.black, fontSize: 16),
+                      controller: TextEditingController(),
                     ),
                   ),
                 ),
@@ -177,7 +195,7 @@ class _Profiledit_State extends State<Profiledit> {
                   height: 18,
                 ),
                 SizedBox(
-                  width: 289,
+                  width: 315,
                   child: Align(
                     alignment: Alignment.topLeft,
                     child: Text(
@@ -192,17 +210,23 @@ class _Profiledit_State extends State<Profiledit> {
                 ),
                 SizedBox(
                   height: 40,
-                  width: 289,
+                  width: 315,
                   child: Container(
-                    padding: EdgeInsets.all(8),
+                    padding: EdgeInsets.only(left: 10, top: 15),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(11),
                       border: Border.all(color: Colors.grey, width: 1),
                     ),
-                    child: Text(
-                      "0821-3487-99456",
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Masukkan nomor telepon',
+                        hintStyle:
+                            TextStyle(color: Colors.grey), // Gaya teks hint
+                        border: InputBorder.none,
+                      ),
                       textAlign: TextAlign.left,
                       style: TextStyle(color: Colors.black, fontSize: 16),
+                      controller: TextEditingController(),
                     ),
                   ),
                 ),
@@ -244,7 +268,7 @@ class _Profiledit_State extends State<Profiledit> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 2), // Jarak antara tombol
+                    // Jarak antara tombol
                     // Tombol Edit Profil
                     InkWell(
                       onTap: () {
