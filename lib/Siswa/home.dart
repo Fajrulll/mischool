@@ -125,9 +125,8 @@ class _home_mentorState extends State<home> {
                     borderRadius: BorderRadius.circular(20),
                     color: Color.fromARGB(255, 242, 242, 242),
                   ),
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Stack(
                         children: [
@@ -171,7 +170,7 @@ class _home_mentorState extends State<home> {
                           Container(
                             width: 60,
                             height: 40,
-                            child: Row(
+                            child: Column(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Stack(
