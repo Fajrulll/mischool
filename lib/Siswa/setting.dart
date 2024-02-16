@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mischool/Siswa/home.dart';
+import 'package:mischool/main.dart';
 
 class Setting extends StatefulWidget {
   @override

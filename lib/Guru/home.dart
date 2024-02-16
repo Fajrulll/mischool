@@ -77,99 +77,47 @@ class _home_mentorState extends State<home> {
                   height: 20,
                 ),
                 Container(
-                  child: Stack(
+                  padding: EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black), // Contoh dekorasi
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Senin, 12 Juni',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                      Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          InkWell(
-                            onTap: () {},
-                            child: Column(
-                              children: [
-                                Container(
-                                  alignment: Alignment.center,
-                                  height: 54,
-                                  width: 102,
-                                  child: Stack(
-                                    children: [
-                                      Image.asset(
-                                        'assets/images/Vector (2).png',
-                                        height: 32,
-                                        width: 32,
-                                      ),
-                                    ],
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: Color.fromARGB(255, 255, 74, 74),
-                                    borderRadius: BorderRadius.circular(13),
-                                    boxShadow: [],
-                                  ),
-                                ),
-                                Text(
-                                  'Pelanggaran',
-                                  style: GoogleFonts.poppins(
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400),
-                                ),
-                              ],
-                            ),
+                          Text(
+                            'Masuk:',
+                            style: TextStyle(fontSize: 14),
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/bookmark.png',
-                                      height: 31,
-                                      width: 31,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 48, 220, 148),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Absensi',
-                                style: GoogleFonts.poppins(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
+                          Text(
+                            '06.30',
+                            style: TextStyle(fontSize: 14),
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                alignment: Alignment.center,
-                                height: 54,
-                                width: 102,
-                                child: Stack(
-                                  children: [
-                                    Image.asset(
-                                      'assets/images/database-alert.png',
-                                      height: 30,
-                                      width: 30,
-                                    ),
-                                  ],
-                                ),
-                                decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 93, 136, 255),
-                                  borderRadius: BorderRadius.circular(13),
-                                  boxShadow: [],
-                                ),
-                              ),
-                              Text(
-                                'Point',
-                                style: GoogleFonts.poppins(
-                                    fontSize: 13, fontWeight: FontWeight.w400),
-                              ),
-                            ],
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            'Pulang:',
+                            style: TextStyle(fontSize: 14),
+                          ),
+                          Text(
+                            '--:--',
+                            style: TextStyle(fontSize: 14),
                           ),
                         ],
                       ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mischool/Guru/profil.dart';
 import 'package:mischool/kntrl_org_tua/home.dart';
+import 'package:mischool/main.dart';
 
 class Setting extends StatefulWidget {
   @override
@@ -20,13 +22,8 @@ class _SettingState extends State<Setting> {
           padding: EdgeInsets.only(left: 25),
           child: InkWell(
             onTap: () {
-              // Kembali ke halaman sebelumnya
-              Navigator.pop(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => home(), // Menavigasi ke halaman home
-                ),
-              );
+              // Kembali ke halaman home
+              Navigator.popUntil(context, (route) => route.isFirst);
             },
             child: Icon(Icons.arrow_back, color: Colors.blue),
           ),
