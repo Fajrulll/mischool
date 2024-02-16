@@ -117,61 +117,114 @@ class _home_mentorState extends State<home> {
                   height: 16,
                 ),
                 Center(
-                  child: Container(
-                    height: 80,
-                    width: 342,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color.fromARGB(255, 242, 242, 242),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            height: 64,
-                            width: 54,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(16),
-                              color: Color.fromARGB(255, 93, 136, 255),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  'sen',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 0,
-                                ), // Spacer antara teks "sen" dan "12"
-                                Text(
-                                  '12',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 0,
-                                ), // Spacer antara teks "12" dan "juni"
-                                Text(
-                                  'juni',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        padding: EdgeInsets.only(
+                            left: 16, top: 8, bottom: 8, right: 30),
+                        height: 80,
+                        width: 342,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 242, 242, 242),
+                          borderRadius: BorderRadius.circular(20),
                         ),
-                      ],
-                    ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.only(top: 8),
+                              height: 64,
+                              width: 54,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(16),
+                                color: Color.fromARGB(255, 93, 136, 255),
+                              ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Sen',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  Text(
+                                    '12',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  Text(
+                                    'Juni',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: 60,
+                              height: 40,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Masuk',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  Text(
+                                    '06.30 AM',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 164, 164, 164),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(left: 13),
+                              width: 60,
+                              height: 40,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Pulang',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  Text(
+                                    '-- : --',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 164, 164, 164),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ), // Tambahan: Tutup Container di sini
+                    ],
                   ),
                 ),
                 const SizedBox(

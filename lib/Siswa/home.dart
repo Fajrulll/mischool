@@ -116,135 +116,114 @@ class _home_mentorState extends State<home> {
                 const SizedBox(
                   height: 16,
                 ),
-                Container(
-                  height: 80,
-                  width: 342,
-                  padding:
-                      EdgeInsets.only(left: 16, top: 8, bottom: 8, right: 30),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Color.fromARGB(255, 242, 242, 242),
-                  ),
+                Center(
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Stack(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.only(top: 8),
-                            height: 64,
-                            width: 54,
-                            decoration: BoxDecoration(
+                      Container(
+                        padding: EdgeInsets.only(
+                            left: 16, top: 8, bottom: 8, right: 30),
+                        height: 80,
+                        width: 342,
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(255, 242, 242, 242),
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.only(top: 8),
+                              height: 64,
+                              width: 54,
+                              decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(16),
-                                color: Color.fromARGB(255, 93, 136, 255)),
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Sen',
-                                  style: GoogleFonts.poppins(
+                                color: Color.fromARGB(255, 93, 136, 255),
+                              ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    'Sen',
+                                    style: GoogleFonts.poppins(
                                       color: Color.fromARGB(255, 255, 255, 255),
                                       fontSize: 12,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                Text(
-                                  '12',
-                                  style: GoogleFonts.poppins(
-                                      color: Color.fromARGB(255, 255, 255, 255),
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                                Text(
-                                  'Juni',
-                                  style: GoogleFonts.poppins(
-                                      color: Color.fromARGB(255, 255, 255, 255),
-                                      fontSize: 12,
-                                      fontWeight: FontWeight.w600),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Stack(
-                        children: [
-                          Container(
-                            width: 60,
-                            height: 40,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Stack(
-                                  children: [
-                                    Container(
-                                      padding:
-                                          EdgeInsets.only(bottom: 20, left: 7),
-                                      child: Text(
-                                        'Masuk',
-                                        style: GoogleFonts.poppins(
-                                            color: Color.fromARGB(255, 0, 0, 0),
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.w600),
-                                      ),
+                                      fontWeight: FontWeight.w600,
                                     ),
-                                    Container(
-                                        padding: EdgeInsets.only(top: 20),
-                                        child: Text(
-                                          '06.30 AM',
-                                          style: GoogleFonts.poppins(
-                                              color: Color.fromARGB(
-                                                  255, 164, 164, 164),
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w500),
-                                        ))
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      Stack(
-                        children: [
-                          Container(
-                            padding: EdgeInsets.only(left: 13),
-                            width: 60,
-                            height: 40,
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Stack(
-                                  children: [
-                                    Container(
-                                      padding: EdgeInsets.only(
-                                        bottom: 20,
-                                      ),
-                                      child: Text(
-                                        'Pulang',
-                                        style: GoogleFonts.poppins(
-                                            color: Color.fromARGB(255, 0, 0, 0),
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.w600),
-                                      ),
+                                  ),
+                                  Text(
+                                    '12',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
                                     ),
-                                    Container(
-                                        padding: EdgeInsets.only(top: 20),
-                                        child: Text(
-                                          '-- : --',
-                                          style: GoogleFonts.poppins(
-                                              color: Color.fromARGB(
-                                                  255, 164, 164, 164),
-                                              fontSize: 12,
-                                              fontWeight: FontWeight.w500),
-                                        ))
-                                  ],
-                                ),
-                              ],
+                                  ),
+                                  Text(
+                                    'Juni',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                        ],
-                      ),
+                            Container(
+                              width: 60,
+                              height: 40,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Masuk',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  Text(
+                                    '06.30 AM',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 164, 164, 164),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.only(left: 13),
+                              width: 60,
+                              height: 40,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    'Pulang',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 0, 0, 0),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
+                                  Text(
+                                    '-- : --',
+                                    style: GoogleFonts.poppins(
+                                      color: Color.fromARGB(255, 164, 164, 164),
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ), // Tambahan: Tutup Container di sini
                     ],
                   ),
                 ),
