@@ -131,7 +131,7 @@ class _home_mentorState extends State<home> {
                       Stack(
                         children: [
                           Container(
-                            padding: EdgeInsets.only(top: 5),
+                            padding: EdgeInsets.only(top: 8),
                             height: 64,
                             width: 54,
                             decoration: BoxDecoration(
